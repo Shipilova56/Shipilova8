@@ -1,0 +1,8 @@
+n = int(input("N: "))
+a = list(map(float, input("Числа: ").split()))
+mn = a.index(min(a))
+mx = a.index(max(a))
+l = min(mn, mx)
+r = max(mn, mx)
+res = sum(a[l + 1 : r])
+print("Ответ:", res)
